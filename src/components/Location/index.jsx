@@ -5,7 +5,7 @@ import { isIOS, isAndroid } from 'react-device-detect';
 import kakaoIcon from '../../assets/icons/kakaonavi.png';
 import naverIcon from '../../assets/icons/navermap.png';
 import tmapIcon from '../../assets/icons/tmap.png';
-import mapMarkerIcon from '../../assets/icons/map-marker-custom.png';
+import mapMarkerIcon from '../../assets/icons/map-marker-custom-green.png';
 
 const URL_ENCODED_HOTEL =
   '%ec%97%98%eb%a6%ac%ec%97%90%eb%82%98%ed%98%b8%ed%85%94';
@@ -59,7 +59,7 @@ function Location() {
           kakao.init(process.env.REACT_APP_KAKAO_KEY);
         }
         kakao.Navi.start({
-          name: '엘리에나호텔',
+          name: '지타워컨벤션',
           x: 127.0318,
           y: 37.5112,
           coordType: 'wgs84',
@@ -72,7 +72,7 @@ function Location() {
 
   const handleClickTMap = () => {
     if (isIOS || isAndroid) {
-      window.location.replace('tmap://search?name=엘리에나호텔');
+      window.location.replace('tmap://search?name=지타워컨벤션');
     } else {
       window.open('https://surl.tmobiapi.com/b9e8d01b');
     }
@@ -86,11 +86,11 @@ function Location() {
       <div className="location-wrapper">
         <div className="venue">
           <img src={mapMarkerIcon} alt="" />
-          엘리에나호텔 컨벤션홀 (2F)
+          지타워컨벤션 (2F)
         </div>
         <div className="venue-info">
-          <span>서울 강남구 논현로 645</span>
-          <span> 02&#41;&nbsp;3443-5670</span>
+          <span>서울 구로구 디지털로26길 38 (구로동 832)</span>
+          <span> 02&#41;&nbsp;432-9000</span>
         </div>
       </div>
       <div className="location-info">
@@ -120,24 +120,20 @@ function Location() {
           </div>
         </div>
         <div className="info-item">
-          <div className="label">지하철</div>
+          <div className="label">셔틀버스 (15분 간격)</div>
           <div>
-            <span className="seven">7호선 학동역</span> 4번 출구 도보 4분
+            <span className="one">1호선</span>&<span className="seven">7호선 가산디지털단지역</span> 공용 5번 출구 앞 탑승
           </div>
           <div>
-            <span className="nine">9호선 언주역</span> 2번 출구 도보 6분
+            <span className="two">2호선 구로디지털단지역</span> 4번 출구 100M 직진 후 탑승
           </div>
         </div>
-        <div className="info-item">
+        {/* <div className="info-item">
           <div className="label">버스</div>
           <div>
-            논현동고개 (23-119)
+            에이스하이엔드타워2차.G밸리산업박물관
             <span>
-              <span className="blue">147</span>
-              <span className="blue">241</span>
-              <span className="blue">463</span>
-              <span className="green">3412</span>
-              <span className="green">4211</span>
+              <span className="green">금천07</span>
             </span>
           </div>
           <div>
@@ -148,7 +144,7 @@ function Location() {
               <span className="green">4211</span>
             </span>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -18,19 +18,19 @@ import RsvpModal from './components/RsvpModal';
 import Gallery from './components/Gallery';
 import ImageSlide from './components/ImageSlide';
 import Quiz from './components/Quiz';
-import GuestBook from './components/GuestBook';
+// import GuestBook from './components/GuestBook';
 import WriteModal from './components/GuestBook/WriteModal';
 import DeleteModal from './components/GuestBook/DeleteModal';
 
-import mainImg from './assets/photo/main3.jpg';
-import flowerIcon from './assets/icons/daisy.png';
-import linkIcon from './assets/icons/link.png';
-import kakaoIcon from './assets/icons/kakao-talk.png';
-import leafIcon from './assets/icons/green-tea.png';
+import mainImg from './assets/photo/main.jpg';
+// import flowerIcon from './assets/icons/daisy.png';
+import linkIcon from './assets/icons/link-green.png';
+import kakaoIcon from './assets/icons/kakao-talk-green.png';
+import leafIcon from './assets/icons/greentea-green.png';
 
 import purpleImg from './assets/background/purple.png';
 import leafImg from './assets/background/leaf.png';
-import basketImg from './assets/background/pink.png';
+// import basketImg from './assets/background/pink.png';
 
 import './style.scss';
 import 'react-toastify/dist/ReactToastify.css';
@@ -45,8 +45,8 @@ export const shareKakao = () => {
     kakao.Share.sendDefault({
       objectType: 'feed',
       content: {
-        title: '김지환 ♥ 최유정의 결혼식에 초대합니다.',
-        description: '23.09.09 PM 2:30 · 엘리에나호텔',
+        title: '고영현 ♥ 박솔혜의 결혼식에 초대합니다.',
+        description: '25.03.23 AM 11:00 · 지타워컨벤션',
         imageUrl: 'https://i.postimg.cc/6Wr3MfXf/kakaoshare.jpg',
         link: {
           mobileWebUrl: process.env.REACT_APP_MAIN_LINK,
@@ -168,11 +168,11 @@ function App() {
       {loading && (
         <div className="loading">
           <div className="decoration">Our Wedding Day</div>
-          <div className="loading-content">유정 ♥ 지환</div>
+          <div className="loading-content">솔혜 ♥ 영현</div>
         </div>
       )}
       <div className="header">
-        <div className="title">YUJEONG & JIHWAN</div>
+        <div className="title">SOLHYE & YEONGHYEON</div>
         <div className="buttons">
           <CopyToClipboard
             text={process.env.REACT_APP_MAIN_LINK}
@@ -190,32 +190,31 @@ function App() {
           <img className="main-img" src={mainImg} alt="" />
           <div className="invite-text">
             <img src={leafIcon} alt="" />
-            <p>저희 두 사람의 특별한 시작을</p>
-            <p>소중한 분들과 함께하고 싶습니다.</p>
+            <p>사랑하는 사람을 만나 함께 걷고자 합니다.</p>
+            <p>저희를 아껴주시는 분들 앞에서 나아가겠습니다.</p>
           </div>
         </div>
         <div className="invite" ref={inviteRef}>
           {/* <div className="title">Invitation</div> */}
           <div className="text">
             <img src={purpleImg} alt="" />
-            <p>지환 그리고 유정,</p>
-            <p>한 곳을 바라보며 첫 발을 떼는 날</p>
-            <p>곁에서 아껴주셨던 고마운 분들을 모십니다.</p>
-            <br />
-            <p>서로 소중히 아끼고 처음처럼 사랑하며</p>
-            <p>예쁘게 살겠습니다.</p>
-            <p>따뜻한 사랑으로 축복해주세요.</p>
+            <p>사랑의 정의를 내리는 이 길에서,</p>
+            <p>더없이 행복하겠습니다.</p>
+            <p>지금껏 달려온 우리의 용기를 위해</p>
+            <p>찬란한 우리의 미래를 위해</p>
+            <p>우주 속 무수한 사랑의 형태 중 하나를 찾고자 합니다.</p>
+            <p>To Infinity And Beyond!</p>
+            <p></p>
           </div>
           <div className="line" />
           <div className="name-wrapper">
             <div className="name">
-              <img src={flowerIcon} alt="" />
-              <strong>김호영 · 소혜경</strong>의 <div className="sub">아들</div>
-              <span>지환</span>
+              <strong>고동석 · 김인하</strong>의 <div className="sub">아들</div>
+              <span>영현</span>
             </div>
             <div className="name">
-              <strong>최흥길 · 김경애</strong>의 <div className="sub">딸</div>
-              <span>유정</span>
+              <strong>박주열 · 길동숙</strong>의 <div className="sub">딸</div>
+              <span>솔혜</span>
             </div>
           </div>
         </div>
@@ -223,7 +222,7 @@ function App() {
         <Calendar />
         <DDay />
         <Gallery handleClickImage={handleClickImage} />
-        <div className="quiz">
+        {/* <div className="quiz">
           <div className="sub-title">JOIN US</div>
           <div className="title">신랑신부 퀴즈 풀기</div>
           <div className="quiz-wrapper">
@@ -242,7 +241,7 @@ function App() {
               퀴즈 풀어보기
             </button>
           </div>
-        </div>
+        </div> */}
         <Information />
         <Location />
         <Account setCopyModal={setCopyModal} />
@@ -266,12 +265,12 @@ function App() {
           </div>
         </div>
 
-        <GuestBook
+        {/* <GuestBook
           handleWriteModal={handleWriteModal}
           handleDeleteModal={handleDeleteModal}
           guestbookList={guestbookList}
           setGuestbookList={setGuestbookList}
-        />
+        /> */}
         <div className="share">
           <CopyToClipboard
             text={process.env.REACT_APP_MAIN_LINK}
@@ -294,9 +293,9 @@ function App() {
             <div>사랑으로 응원해주신</div>
             <div>모든 분들께 감사드립니다.</div>
           </div>
-          <div className="copyright">
-            Designed & Developed by Yujeong, Jihwan
-          </div>
+          {/* <div className="copyright">
+            Designed & Developed by Yeonghyeon
+          </div> */}
         </div>
       </div>
       {copyModal && (
