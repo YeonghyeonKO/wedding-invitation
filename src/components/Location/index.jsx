@@ -7,7 +7,7 @@ import naverIcon from '../../assets/icons/navermap.png';
 import tmapIcon from '../../assets/icons/tmap.png';
 import mapMarkerIcon from '../../assets/icons/map-marker-custom-green.png';
 
-const URL_ENCODED_HOTEL =
+const URL_ENCODED_VENUE =
   '%EC%A7%80%ED%83%80%EC%9B%8C%EC%BB%A8%EB%B2%A4%EC%85%98';
 
 function Location() {
@@ -38,11 +38,11 @@ function Location() {
   const handleClickNaverMap = () => {
     if (isIOS) {
       window.location.replace(
-        `nmap://search?query=${URL_ENCODED_HOTEL}&appname=${process.env.REACT_APP_MAIN_LINK}`,
+        `nmap://search?query=${URL_ENCODED_VENUE}&appname=${process.env.REACT_APP_MAIN_LINK}`,
       );
     } else if (isAndroid) {
       window.location.replace(
-        `intent://search?query=${URL_ENCODED_HOTEL}&appname=${process.env.REACT_APP_MAIN_LINK}#Intent;scheme=nmap;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=com.nhn.android.nmap;end`,
+        `intent://search?query=${URL_ENCODED_VENUE}&appname=${process.env.REACT_APP_MAIN_LINK}#Intent;scheme=nmap;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=com.nhn.android.nmap;end`,
       );
     } else {
       window.open(
