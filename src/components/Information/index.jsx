@@ -21,7 +21,7 @@ const informationData = {
     img: parkingImg,
     content1: '예식장 내 주차장에 자가 주차가 가능합니다. (무료 주차 2시간)',
     content2:
-      '1400대 동시 수용이 가능한 주차 공간이 마련되어 있습니다.'
+      '1400대 동시 수용이 가능한 주차 공간이 마련되어 있습니다.',
   },
   dining: {
     name: '식사 안내',

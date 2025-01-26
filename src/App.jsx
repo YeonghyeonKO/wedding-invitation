@@ -47,7 +47,7 @@ export const shareKakao = () => {
       content: {
         title: '고영현 ♥ 박솔혜의 결혼식에 초대합니다.',
         description: '25.03.23 AM 11:00 · 지타워컨벤션',
-        imageUrl: 'https://i.postimg.cc/6Wr3MfXf/kakaoshare.jpg',
+        imageUrl: 'https://i.postimg.cc/RVZnsVVv/main.jpg',
         link: {
           mobileWebUrl: process.env.REACT_APP_MAIN_LINK,
           webUrl: process.env.REACT_APP_MAIN_LINK,
@@ -65,9 +65,9 @@ export const shareKakao = () => {
           title: '위치보기',
           link: {
             mobileWebUrl:
-              'https://map.naver.com/v5/entry/place/1354448162?c=15,0,0,0,dh',
+              'https://map.naver.com/p/entry/place/1090437805?c=15.00,0,0,0,dh',
             webUrl:
-              'https://map.naver.com/v5/entry/place/1354448162?c=15,0,0,0,dh',
+              'https://map.naver.com/p/entry/place/1090437805?c=15.00,0,0,0,dh',
           },
         },
       ],
@@ -119,10 +119,10 @@ function App() {
     openScroll();
   };
 
-  const handleClickQuiz = () => {
-    setQuizModal(true);
-    lockScroll();
-  };
+  // const handleClickQuiz = () => {
+  //   setQuizModal(true);
+  //   lockScroll();
+  // };
 
   const handleCloseQuiz = () => {
     setQuizModal(false);
@@ -204,7 +204,6 @@ function App() {
             <p>찬란한 우리의 미래를 위해</p>
             <p>우주 속 무수한 사랑의 형태 중 하나를 찾고자 합니다.</p>
             <p>To Infinity And Beyond!</p>
-            <p></p>
           </div>
           <div className="line" />
           <div className="name-wrapper">

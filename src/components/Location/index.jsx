@@ -18,7 +18,7 @@ function Location() {
     if (!mapElement.current || !naver) return;
 
     // 지도에 표시할 위치의 위도와 경도 좌표를 파라미터로 넣어줍니다.
-    const location = new naver.maps.LatLng(37.5112, 127.0315);
+    const location = new naver.maps.LatLng(37.4798, 126.8953);
     const mapOptions = {
       center: location,
       zoom: 17,
@@ -46,7 +46,7 @@ function Location() {
       );
     } else {
       window.open(
-        'https://map.naver.com/v5/entry/place/1354448162?c=15,0,0,0,dh',
+        'https://map.naver.com/p/entry/place/1090437805?c=15.00,0,0,0,dh',
       );
     }
   };
@@ -66,7 +66,7 @@ function Location() {
         });
       }
     } else {
-      window.open('https://map.kakao.com/?itemId=1197705393');
+      window.open('https://map.kakao.com/?itemId=197749949');
     }
   };
 

@@ -5,7 +5,7 @@ import { isMobile } from 'react-device-detect';
 import ScrollContainer from 'react-indiana-drag-scroll';
 
 import arrowIcon from '../../assets/icons/arrow-green.png';
-import arrowUpIcon from '../../assets/icons/arrow-up.png';
+import arrowUpIcon from '../../assets/icons/arrow-up-green.png';
 import scrollIcon from '../../assets/icons/scroll.png';
 import photoList from './photo';
 
