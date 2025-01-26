@@ -8,7 +8,7 @@ import tmapIcon from '../../assets/icons/tmap.png';
 import mapMarkerIcon from '../../assets/icons/map-marker-custom-green.png';
 
 const URL_ENCODED_HOTEL =
-  '%ec%97%98%eb%a6%ac%ec%97%90%eb%82%98%ed%98%b8%ed%85%94';
+  '%EC%A7%80%ED%83%80%EC%9B%8C%EC%BB%A8%EB%B2%A4%EC%85%98';
 
 function Location() {
   const mapElement = useRef(null);
