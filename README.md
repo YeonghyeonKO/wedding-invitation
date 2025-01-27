@@ -8,6 +8,7 @@
   - API 및 서비스 > IAM 및 관리자 > 서비스 계정 > 키(JSON)
   - API 및 서비스 > 라이브러리 > Google Sheets API
   - src/components/GuestBook/index.jsx 내 useGoogleSheet 함수에 sheetId 입력
+  - .env에 REACT_APP 환경변수 지정 후 vercel에도 환경변수 설정
 ---
 
 # Getting Started with Create React App
@@ -15,7 +16,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-838-21-0257-341
 In the project directory, you can run:
 
 ### `yarn start`

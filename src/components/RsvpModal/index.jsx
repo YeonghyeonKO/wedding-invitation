@@ -18,7 +18,7 @@ function RsvpModal({ handleCloseRsvpModal }) {
 
   const handleGoogleSheetAddRow = async (row) => {
     const googleSheet = await getGoogleSheet();
-    const sheetsByIdElement = googleSheet.sheetsById[process.env.REACT_APP_GOOGLE_SHEET_ID];
+    const sheetsByIdElement = googleSheet.sheetsById['2056027989'];
     await sheetsByIdElement.addRow(row);
   };
 
@@ -35,7 +35,6 @@ function RsvpModal({ handleCloseRsvpModal }) {
       handleGoogleSheetAddRow(data);
     }
   };
-  console.log(process.env);
 
   const handleChangeData = (type, value) => {
     setData((curData) => {
