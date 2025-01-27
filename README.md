@@ -1,9 +1,21 @@
+# 해야할 것들
+1. node16 및 플젝 dependency에 맞도록 아래 명령 수행
+  - `npm remove node-sass`
+  - `npm i node-sass@npm:sass -D\n\n`
+
+2. Google 스프레드시트 연동
+  - https://console.cloud.google.com/
+  - API 및 서비스 > IAM 및 관리자 > 서비스 계정 > 키(JSON)
+  - API 및 서비스 > 라이브러리 > Google Sheets API
+  - src/components/GuestBook/index.jsx 내 useGoogleSheet 함수에 sheetId 입력
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-
+838-21-0257-341
 In the project directory, you can run:
 
 ### `yarn start`

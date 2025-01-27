@@ -24,14 +24,14 @@ const accountInfo = {
         name: '고동석',
         bank: '동석은행',
         account: '1234-5678',
-        kakao: 'https://qr.kakaopay.com/Ej8ZBFvdw',
+        kakao: '',
       },
       {
         type: '어머니',
         name: '김인하',
         bank: '인하은행',
         account: '1234-5678',
-        kakao: 'https://qr.kakaopay.com/Ej8ZBFvdw',
+        kakao: '',
       },
     ],
   },
@@ -41,22 +41,23 @@ const accountInfo = {
       {
         type: '신부',
         name: '박솔혜',
-        bank: '솔혜은행',
-        account: '1234-5678',
+        bank: 'KB국민은행',
+        account: '605301-04-131333',
+        kakao: 'https://qr.kakaopay.com/FNGB32VMV',
       },
       {
         type: '아버지',
         name: '박주열',
-        bank: '주열은행',
-        account: '1234-5678',
-        // kakao: 'https://qr.kakaopay.com/FYysFddA1',
+        bank: 'KB국민은행',
+        account: '838-21-0257-341',
+        kakao: '',
       },
       {
         type: '어머니',
         name: '길동숙',
-        bank: '동숙은행',
-        account: '1234-5678',
-        // kakao: 'https://qr.kakaopay.com/FEhonaYzK',
+        bank: 'KEB하나은행',
+        account: '344-890469-74907',
+        kakao: '',
       },
     ],
   },
@@ -95,7 +96,7 @@ function Account(props) {
       <div className="description">
         <img src={whiteFlowerImg} alt="" />
         <p>저희 두 사람의 소중한 시작을</p>
-        <p>함께 해주시는 모든 분들게 감사드리며,</p>
+        <p>함께 해주시는 모든 분들께 감사드리며,</p>
         <p>전해주시는 따뜻한 진심을 배워</p>
         <p>오래도록 행복하게 잘 살겠습니다.</p>
       </div>
@@ -138,7 +139,7 @@ function Account(props) {
                       aria-hidden="true"
                       style={{
                         visibility:
-                          item.bank === '우리은행' ? 'hidden' : 'visible',
+                          item.kakao === '' ? 'hidden' : 'visible',
                       }}
                     >
                       <img src={kakaopayIcon} alt="" /> 송금
