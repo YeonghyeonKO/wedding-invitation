@@ -21,7 +21,7 @@ function Location() {
     const location = new naver.maps.LatLng(37.4798, 126.8953);
     const mapOptions = {
       center: location,
-      zoom: 17,
+      zoom: 15,
       zoomControl: true,
       zoomControlOptions: {
         position: naver.maps.Position.TOP_RIGHT,
@@ -29,10 +29,46 @@ function Location() {
     };
     const map = new naver.maps.Map(mapElement.current, mapOptions);
 
-    new naver.maps.Marker({
+    const marker = new naver.maps.Marker({
+      icon: {
+        url: './assets/icons/heart-green.png',
+        scaledSize: new naver.maps.Size(30, 32),
+        origin: new naver.maps.Point(0, 0),
+      },
       position: location,
       map,
     });
+
+    const contentString = [
+      '<div class="iw_inner" style="padding:3px; margin: 3px 0px 3px 0px; width: 150px; height: 45px; text-align: center; ">',
+      '   <p style="font-size: 1rem; margin: 0;">지타워컨벤션</p>',
+      '   <p style="font-size: 0.7rem; margin: 0;">서울 구로구 디지털로26길 38</p>',
+      '   <p style="font-size: 0.7rem; margin: 0;">(구로동 832)</p>',
+      '</div>',
+    ].join('');
+
+    const infowindow = new naver.maps.InfoWindow({
+      content: contentString,
+      maxWidth: 240,
+      height: 50,
+      backgroundColor: 'white',
+      borderColor: 'black',
+      borderWidth: 2,
+      disableAnchor: true,
+      textAlign: 'center',
+      margin: 'auto',
+      pixelOffset: new naver.maps.Point(0, -5),
+    });
+
+    naver.maps.Event.addListener(marker, 'click', () => {
+      if (infowindow.getMap()) {
+        infowindow.close();
+      } else {
+        infowindow.open(map, marker);
+      }
+    });
+
+    infowindow.open(map, marker);
   }, []);
 
   const handleClickNaverMap = () => {

@@ -9,6 +9,12 @@
   - API 및 서비스 > 라이브러리 > Google Sheets API
   - src/components/GuestBook/index.jsx 내 useGoogleSheet 함수에 sheetId 입력
   - .env에 REACT_APP 환경변수 지정 후 vercel에도 환경변수 설정
+
+3. Naver Dynamic Map 보여주기
+  - https://console.ncloud.com/naver-service/application
+  - AI-NAVER API > Application 등록
+  - Maps 서비스 중 Web/Mobile Dynamic Map 선택
+  - 서비스 환경 등록에서, http://localhost:3000 및 배포 도메인 등록
 ---
 
 # Getting Started with Create React App
