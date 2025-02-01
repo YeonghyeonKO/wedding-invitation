@@ -110,7 +110,7 @@ function Location() {
     if (isIOS || isAndroid) {
       window.location.replace('tmap://search?name=지타워컨벤션');
     } else {
-      window.open('https://surl.tmobiapi.com/b9e8d01b');
+      window.open('https://tmap.life/c7ed688a');
     }
   };
 

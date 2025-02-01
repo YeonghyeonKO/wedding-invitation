@@ -2,7 +2,7 @@
 react/no-array-index-key,no-nested-ternary, indent  */
 
 import React, { useState, useRef } from 'react';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+// import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { ToastContainer } from 'react-toastify';
 // import scrollbar from 'smooth-scrollbar';
 
@@ -24,8 +24,8 @@ import DeleteModal from './components/GuestBook/DeleteModal';
 
 import mainImg from './assets/photo/main.jpg';
 // import flowerIcon from './assets/icons/daisy.png';
-import linkIcon from './assets/icons/link-green.png';
-import kakaoIcon from './assets/icons/kakao-talk-green.png';
+// import linkIcon from './assets/icons/link-green.png';
+// import kakaoIcon from './assets/icons/kakao-talk-green.png';
 import leafIcon from './assets/icons/greentea-green.png';
 
 import purpleImg from './assets/background/purple.png';
@@ -101,9 +101,9 @@ function App() {
   //   }
   // }, []);
 
-  const handleCopyOk = () => {
-    setCopyModal('link');
-  };
+  // const handleCopyOk = () => {
+  //   setCopyModal('link');
+  // };
 
   const handleCloseLinkModal = () => {
     setCopyModal('');
@@ -173,7 +173,7 @@ function App() {
       )}
       <div className="header">
         <div className="title">SOLHYE & YEONGHYEON</div>
-        <div className="buttons">
+        {/* <div className="buttons">
           <CopyToClipboard
             text={process.env.REACT_APP_MAIN_LINK}
             onCopy={handleCopyOk}
@@ -183,7 +183,7 @@ function App() {
           <div onClick={shareKakao} aria-hidden="true">
             <img src={kakaoIcon} alt="" />
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="content" id="smooth-scroll">
         <div className="main">
@@ -195,7 +195,7 @@ function App() {
           </div>
         </div>
         <div className="invite" ref={inviteRef}>
-          {/* <div className="title">Invitation</div> */}
+          <div className="title">Invitation</div>
           <div className="text">
             <img src={purpleImg} alt="" />
             <p>사랑의 정의를 내리는 이 길에서,</p>
@@ -242,8 +242,6 @@ function App() {
           </div>
         </div> */}
         <Information />
-        <Location />
-        <Account setCopyModal={setCopyModal} />
         <div className="rsvp">
           <div className="sub-title">save the date</div>
           <div className="title">참석 의사 전달</div>
@@ -263,6 +261,8 @@ function App() {
             </button>
           </div>
         </div>
+        <Location />
+        <Account setCopyModal={setCopyModal} />
 
         {/* <GuestBook
           handleWriteModal={handleWriteModal}
@@ -270,7 +270,7 @@ function App() {
           guestbookList={guestbookList}
           setGuestbookList={setGuestbookList}
         /> */}
-        <div className="share">
+        {/* <div className="share">
           <CopyToClipboard
             text={process.env.REACT_APP_MAIN_LINK}
             onCopy={handleCopyOk}
@@ -284,7 +284,7 @@ function App() {
             <img src={kakaoIcon} alt="" />
             카카오톡 공유하기
           </div>
-        </div>
+        </div> */}
         <div className="thanks">
           <div className="title">Thanks To</div>
           <div className="thanks-wrapper">
