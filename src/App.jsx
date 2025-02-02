@@ -28,7 +28,7 @@ import mainImg from './assets/photo/main.jpg';
 // import kakaoIcon from './assets/icons/kakao-talk-green.png';
 import leafIcon from './assets/icons/greentea-green.png';
 
-import purpleImg from './assets/background/purple.png';
+import pinkImg from './assets/background/pink.png';
 import leafImg from './assets/background/leaf.png';
 // import basketImg from './assets/background/pink.png';
 
@@ -197,7 +197,7 @@ function App() {
         <div className="invite" ref={inviteRef}>
           <div className="title">Invitation</div>
           <div className="text">
-            <img src={purpleImg} alt="" />
+            <img src={pinkImg} alt="" />
             <p>사랑의 정의를 내리는 이 길에서,</p>
             <p>더없이 행복하겠습니다.</p>
             <p>지금껏 달려온 우리의 용기를 위해</p>
@@ -288,9 +288,9 @@ function App() {
         <div className="thanks">
           <div className="title">Thanks To</div>
           <div className="thanks-wrapper">
-            <div>언제나 곁을 따뜻하게 지켜주시고</div>
-            <div>사랑으로 응원해주신</div>
-            <div>모든 분들께 감사드립니다.</div>
+            <div>항상 따스한 마음으로 응원해주시고</div>
+            <div>격려해주신 모든 분들께 감사드립니다.</div>
+            <div>- 고영현, 박솔혜 드림 - </div>
           </div>
           {/* <div className="copyright">
             Designed & Developed by Yeonghyeon

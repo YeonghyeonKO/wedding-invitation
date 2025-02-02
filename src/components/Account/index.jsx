@@ -15,6 +15,7 @@ const accountInfo = {
       {
         type: '신랑',
         name: '고영현',
+        phone: '010-8957-6286',
         bank: '토스뱅크',
         account: '1000-1286-5507',
         kakao: 'https://qr.kakaopay.com/Ej8ZBFvdw',
@@ -22,6 +23,7 @@ const accountInfo = {
       {
         type: '아버지',
         name: '고동석',
+        phone: '010-5356-3847',
         bank: 'iM뱅크(대구은행)',
         account: '214-13-004489',
         kakao: '',
@@ -29,6 +31,7 @@ const accountInfo = {
       {
         type: '어머니',
         name: '김인하',
+        phone: '010-4510-6286',
         bank: 'NH농협은행',
         account: '439-12-137622',
         kakao: '',
@@ -41,6 +44,7 @@ const accountInfo = {
       {
         type: '신부',
         name: '박솔혜',
+        phone: '010-9126-1053',
         bank: 'KB국민은행',
         account: '605301-04-131333',
         kakao: 'https://qr.kakaopay.com/FNGB32VMV',
@@ -48,6 +52,7 @@ const accountInfo = {
       {
         type: '아버지',
         name: '박주열',
+        phone: '010-5408-1053',
         bank: 'KB국민은행',
         account: '838-21-0257-341',
         kakao: '',
@@ -55,6 +60,7 @@ const accountInfo = {
       {
         type: '어머니',
         name: '길동숙',
+        phone: '010-8755-1058',
         bank: 'KEB하나은행',
         account: '344-890469-74907',
         kakao: '',
@@ -125,7 +131,7 @@ function Account(props) {
                 <div className="account-content-item" key={item.name}>
                   <div className="top">
                     <div className="name">
-                      {item.type} <span>{item.name}</span>
+                      {item.type} <span>{item.name} <div className="phone">({item.phone})</div></span>
                     </div>
                     <div className="account-num">
                       <span>{item.bank}</span>
