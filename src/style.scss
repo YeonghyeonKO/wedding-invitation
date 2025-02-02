@@ -857,6 +857,7 @@ html {
                 display: flex;
                 align-items: center;
 
+
                 .name {
                   font-size: 12px;
 
@@ -866,21 +867,27 @@ html {
                     font-weight: 500;
 
                     .phone {
-                      font-size: 13px;
+                      font-size: 12px;
                       font-weight: 300;
                     }
                   }
                 }
 
-                .account-num {
+                .account-info {
                   font-size: 13px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
 
-                  span {
+                  .account-name {
                     margin-right: 8px;
                     font-weight: 500;
                   }
-                }
 
+                  .account-num {
+                    margin-right: 8px;
+                  }
+                }
               }
 
               .bottom {

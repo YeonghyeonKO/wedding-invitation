@@ -24,7 +24,7 @@ const accountInfo = {
         type: '아버지',
         name: '고동석',
         phone: '010-5356-3847',
-        bank: 'iM뱅크(대구은행)',
+        bank: 'iM뱅크(대구)',
         account: '214-13-004489',
         kakao: '',
       },
@@ -133,9 +133,9 @@ function Account(props) {
                     <div className="name">
                       {item.type} <span>{item.name} <div className="phone">({item.phone})</div></span>
                     </div>
-                    <div className="account-num">
-                      <span>{item.bank}</span>
-                      {item.account}
+                    <div className="account-info">
+                      <div className="account-name">{item.bank}</div>
+                      <div className="account-num">{item.account}</div>
                     </div>
                   </div>
                   <div className="bottom">

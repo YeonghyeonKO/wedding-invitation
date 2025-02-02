@@ -290,7 +290,8 @@ function App() {
           <div className="thanks-wrapper">
             <div>항상 따스한 마음으로 응원해주시고</div>
             <div>격려해주신 모든 분들께 감사드립니다.</div>
-            <div>- 고영현, 박솔혜 드림 - </div>
+            <div />
+            <div>- 고영현, 박솔혜 드림 -</div>
           </div>
           {/* <div className="copyright">
             Designed & Developed by Yeonghyeon
