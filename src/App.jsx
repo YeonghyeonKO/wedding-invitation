@@ -191,7 +191,7 @@ function App() {
           <img className="main-img" src={mainImg} alt="" />
           <div className="invite-text">
             <img src={leafIcon} alt="" />
-            <p>사랑하는 사람을 만나 함께 걷고자 합니다.</p>
+            <p>사랑하는 사람을 만나 함께 걷기 시작했습니다.</p>
             <p>저희를 아껴주시는 분들 앞에서 나아가겠습니다.</p>
           </div>
         </div>
