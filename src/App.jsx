@@ -297,7 +297,7 @@ function App() {
             <div />
             <div />
             <div />
-            <div className="fork">Forked from @yujeong2&apos;s project</div>
+            <div className="fork">Gratefully Forked from @yujeong2&apos;s project</div>
           </div>
         </div>
       </div>
