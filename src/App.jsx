@@ -294,6 +294,10 @@ function App() {
             <div />
             <div>- 고영현, 박솔혜 드림 -</div>
             <img src={posong} className="posong" alt="" />
+            <div />
+            <div />
+            <div />
+            <div className="fork">Forked from @yujeong2&apos;s project</div>
           </div>
         </div>
       </div>
