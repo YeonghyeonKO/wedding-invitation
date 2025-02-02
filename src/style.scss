@@ -1395,7 +1395,7 @@ html {
 
     .thanks {
       background: #2E2C32;
-      height: 160px;
+      min-height: 32vh;
       color: #fff;
       position: relative;
 
@@ -1414,6 +1414,12 @@ html {
 
         div+div {
           margin-top: 10px;
+        }
+
+        .posong {
+          margin-top: 30px;
+          max-width: 15%;
+          height: auto;
         }
       }
 

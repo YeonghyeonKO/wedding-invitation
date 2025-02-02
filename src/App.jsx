@@ -30,6 +30,7 @@ import leafIcon from './assets/icons/greentea-darkgreen.png';
 
 import pinkImg from './assets/background/pink.png';
 import leafImg from './assets/background/leaf.png';
+import posong from './assets/photo/posong.png';
 // import basketImg from './assets/background/pink.png';
 
 import './style.scss';
@@ -292,10 +293,8 @@ function App() {
             <div>격려해주신 모든 분들께 감사드립니다.</div>
             <div />
             <div>- 고영현, 박솔혜 드림 -</div>
+            <img src={posong} className="posong" alt="" />
           </div>
-          {/* <div className="copyright">
-            Designed & Developed by Yeonghyeon
-          </div> */}
         </div>
       </div>
       {copyModal && (
