@@ -22,7 +22,7 @@ const accountInfo = {
       {
         type: '아버지',
         name: '고동석',
-        bank: '대구은행',
+        bank: 'iM뱅크(대구은행)',
         account: '214-13-004489',
         kakao: '',
       },
