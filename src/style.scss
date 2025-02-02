@@ -193,7 +193,7 @@ html {
     align-items: center;
 
     font-size: 12px;
-    font-family: 'Cormorant SC';
+    font-family: 'Times New Roman';
     letter-spacing: 2px;
 
     position: fixed;
@@ -286,7 +286,7 @@ html {
 
       .invite-text {
         text-align: center;
-        color: #9dc183;
+        color: #4b5320;
         margin-top: 10px;
         margin-bottom: 60px;
         font-family: 'RIDIBatang';
@@ -468,12 +468,12 @@ html {
         .month-subtext {
           position: absolute;
           font-family: "bacana";
-          color: #9dc183;
+          color: #54712d;
         }
 
         .month-text {
           font-size: 22px;
-          color: #9dc183;
+          color: #54712d;
           z-index: 2;
           font-weight: 700;
           font-family: 'RIDIBatang';
@@ -562,7 +562,7 @@ html {
       }
 
       .date-text {
-        background: #9bcf75;
+        background: #9cb58b;
         width: 300px;
         height: 40px;
         display: flex;
@@ -987,15 +987,15 @@ html {
           font-size: 14px;
           text-align: center;
           cursor: pointer;
-          color: #9dc183;
+          color: #6a8457;
 
           span {
             margin-right: 5px;
           }
 
           &.active {
-            color: #9dc183;
-            border-bottom: 3px solid #9dc183;
+            color: #6a8457;
+            border-bottom: 3px solid #6a8457;
           }
         }
       }
@@ -1033,7 +1033,7 @@ html {
               margin-left: 10px;
               font-size: 16px;
               font-weight: 600;
-              color: #9dc183;
+              color: #6a8457;
             }
           }
 
@@ -1074,7 +1074,7 @@ html {
         }
 
         .button {
-          background: #9dc183;
+          background: #9cb58b;
           color: #fff;
           border: none;
           border-radius: 5px;

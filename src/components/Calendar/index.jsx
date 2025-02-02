@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 import useScrollFadeIn from '../../hooks/useScrollFadeIn';
-import heartIcon from '../../assets/icons/heart-green.png';
+import heartIcon from '../../assets/icons/heart-darkgreen.png';
 import clockIcon from '../../assets/icons/clock.png';
 
 function Calendar() {

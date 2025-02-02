@@ -26,7 +26,7 @@ import mainImg from './assets/photo/main.jpg';
 // import flowerIcon from './assets/icons/daisy.png';
 // import linkIcon from './assets/icons/link-green.png';
 // import kakaoIcon from './assets/icons/kakao-talk-green.png';
-import leafIcon from './assets/icons/greentea-green.png';
+import leafIcon from './assets/icons/greentea-darkgreen.png';
 
 import pinkImg from './assets/background/pink.png';
 import leafImg from './assets/background/leaf.png';
