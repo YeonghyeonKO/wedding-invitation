@@ -18,6 +18,32 @@ function ImageSlide({ imageModal, handleCloseImageModal }) {
     swipeToSlide: true,
     swipe: true,
     arrows: false,
+    // previousArrow: (
+    //   <button
+    //     type="button"
+    //     style={{
+    //       left: '20px',
+    //       top: '50%',
+    //       transform: 'translateY(-50%)',
+    //       zIndex: 1,
+    //     }}
+    //   >
+    //     이전
+    //   </button>
+    // ),
+    // nextArrow: (
+    //   <button
+    //     type="button"
+    //     style={{
+    //       left: '20px',
+    //       top: '50%',
+    //       transform: 'translateY(-50%)',
+    //       zIndex: 1,
+    //     }}
+    //   >
+    //     다음
+    //   </button>
+    // ),
     beforeChange: (slide, newSlide) => setCurrent(newSlide),
   };
 
